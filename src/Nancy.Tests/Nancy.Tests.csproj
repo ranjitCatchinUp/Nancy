@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.0.0\build\net20\xunit.runner.visualstudio.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -143,6 +144,7 @@
     <Compile Include="Unit\Diagnostics\CustomInteractiveDiagnosticsFixture.cs" />
     <Compile Include="Unit\Diagnostics\DefaultRequestTraceFactoryFixture.cs" />
     <Compile Include="Unit\Diagnostics\DiagnosticsHookFixture.cs" />
+    <Compile Include="Unit\Diagnostics\InteractiveDiagnosticsFixture.cs" />
     <Compile Include="Unit\ErrorHandling\DefaultStatusCodeHandlerFixture.cs" />
     <Compile Include="Unit\Extensions\TypeExtensionsFixture.cs" />
     <Compile Include="Unit\FormatterExtensionsFixture.cs" />
